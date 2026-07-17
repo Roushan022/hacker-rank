@@ -4,8 +4,11 @@ def wrap(string, max_width):
     for i in range(0, len(string), max_width):
         result += string[i:i+max_width] + "\n"
     return result.rstrip()
+    #textwrap.fill(string, max_width) keyword that can do ddirect
 if __name__ == '__main__':
     string = input()
     max_width = int(input())
     result = wrap(string, max_width)
     print(result)
+
+
