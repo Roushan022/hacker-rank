@@ -9,4 +9,4 @@ def print_formatted(number):
 return
 
 n=int(input("Enter a number"))
-
+print_formatted(n)
