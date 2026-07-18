@@ -6,7 +6,7 @@ def print_formatted(number):
         hex_num=hex(i)[2:]
         Binar_num=bin(i)[2:]
         print(f"{dec:>{width}} { octal_num:>{width}} { hex_num:>{width}} {Binar_num:>{width}}")
-return
+    return
 
 n=int(input("Enter a number"))
 print_formatted(n)
