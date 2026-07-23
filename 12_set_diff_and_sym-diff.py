@@ -1,0 +1,8 @@
+n=int(input())
+n=set(map(int,input().split()))
+m=int(input())
+m=set(map(int,input().split()))
+print(n.difference(m))
+print(len(n.difference(m)))
+print(n.symmetric_difference(m))
+print(len(n.symmetric_difference(m)))
