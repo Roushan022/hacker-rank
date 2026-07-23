@@ -1,0 +1,6 @@
+n=int(input())
+a=set(map(int,input().split()))
+b=int(input())
+b=set(map(int,input().split()))
+total=a.union(b)
+print(len(total))
