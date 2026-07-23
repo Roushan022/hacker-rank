@@ -1,0 +1,16 @@
+#hacker rank question
+
+n = int(input())
+s = set(map(int, input().split()))
+N = int(input())
+for i in range(N):
+    ch = input().split()
+    if ch[0] == "pop":
+        if s:
+            s.pop()
+    elif ch[0] == "remove":
+        s.discard(int(ch[1]))  #we can't add remove bcoz if iotem is not thier it will give error
+    elif ch[0] == "discard":
+        s.discard(int(ch[1]))
+
+print(sum(s)) #add the remaing set 
